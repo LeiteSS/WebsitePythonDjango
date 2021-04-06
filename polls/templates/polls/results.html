@@ -1,0 +1,9 @@
+<h1>{{ pergunta.pergunta_text }}</h1>
+
+<ul>
+    {% for resposta in pergunta.resposta_set.all %}
+        <li>{{ resposta.resposta_text }} -- {{ resposta.estrelas }} estrela{{ resposta.estrelas|pluralize }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'polls:detail' pergunta.id %}">Votar denovo?</a>
