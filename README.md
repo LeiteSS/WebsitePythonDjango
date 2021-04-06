@@ -8,7 +8,7 @@ Após instalar o framework Django, é necessário começar um projeto usando o c
 `$django-admin startproject <nomedosite>`
 
 o projeto criado terá este formato:
-
+```
 mysite/
 |---manage.py
 |---mysite/
@@ -16,7 +16,7 @@ mysite/
 |---|---settings.py
 |---|---urls.py
 |---|---wsgi.py
-
+```
 Estes arquivos são:
 
 **manage.py:** Permite interagir com o projeto Django em varias formas, através de linha-de-comando.
@@ -30,7 +30,7 @@ Após entender os documentos que configuram o projeto, atráves da linha de coma
 ***polls*** também pode ser chamado de ***main***.
 
 A estrutura da pasta polls será esta:
-
+```
 polls/
 |---__init__.py
 |---admin.py
@@ -40,7 +40,7 @@ polls/
 |---models.py
 |---tests.py
 |---views.py
-
+```
 Contudo, nesta pasta é criado o documento urls.py para que as telas/views sejam declaradas. Embora tenha mais algumas etapas no 
 desenvolvimento, pode ser dado o comando abaixo: `$py manage.py runserver`
 
